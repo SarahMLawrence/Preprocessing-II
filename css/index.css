@@ -175,6 +175,12 @@ header {
   width: 60%;
   border-bottom: 2px dashed silver;
 }
+@media ((max-width: 500px)) {
+  header {
+    width: 75%;
+    align-content: left;
+  }
+}
 header div {
   display: flex;
 }
@@ -189,7 +195,6 @@ header div h1 {
 @media ((max-width: 500px)) {
   header div h1 {
     width: 75%;
-    text-align: center;
   }
 }
 header div nav {
@@ -202,9 +207,9 @@ header div nav {
 }
 @media ((max-width: 500px)) {
   header div nav {
-    width: 130%;
-    align-items: center;
-    margin-right: 75%;
+    width: 100%;
+    margin-right: 100%;
+    text-align: left;
   }
 }
 header div nav a {
@@ -218,7 +223,8 @@ header div nav a {
 }
 @media ((max-width: 500px)) {
   header div nav a {
-    font-size: 20px;
+    font-size: 12px;
+    width: 50%;
   }
 }
 .footer {
@@ -355,4 +361,33 @@ header div nav a {
   font-size: 20px;
   width: 70%;
   heigth: 20%;
+}
+.home .content-pick .destination div a {
+  text-decoration: none;
+  color: white;
+}
+.home .content-pick .destination div a :hover {
+  color: pink;
+}
+.content-destination {
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content-destination h2 {
+  text-align: center;
+  width: 100%;
+}
+.content-destination p {
+  text-align: center;
+  width: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.content-destination img {
+  width: 60%;
+  margin: 0 auto 30px;
+  border-radius: 10px;
 }
