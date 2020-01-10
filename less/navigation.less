@@ -10,11 +10,19 @@ header {
     border-bottom: 2px dashed silver;
    div{
        display: flex;
+       @media (@mobile){
+           flex-direction: column;
+
+       }
    
      //being h1   
         h1{
             width: 50%;
-            
+            @media (@mobile){
+                width: 75%;
+                text-align: center;
+                
+            }
         }//end h1
 
         //begin nav
@@ -23,6 +31,14 @@ header {
             .flex-layout(space-around, center);
             float: right;
             width: 100%;
+            @media (@mobile){
+ 
+                width: 130%;
+                align-items: center;
+                margin-right: 75%;
+                
+            }
+            
         
          //     begin  a
          a {
@@ -33,6 +49,12 @@ header {
             margin: 1%;
             padding: 2%;
             text-align: center;
+            @media (@mobile){
+                font-size: 20px;
+                
+                
+            }
+            
   
             } //end of a
         }//end nav
